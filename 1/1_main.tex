@@ -3,12 +3,26 @@
 \usepackage[T1,T2A]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[russian,english]{babel}
+\sloppy
 \usepackage{hyperref}
-% \usepackage{csquotes}
+
+\usepackage{fvextra}
+\usepackage{csquotes}
 
 
 % \usepackage{python_pack}
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily,
+        breaklines=true,
+        showstringspaces=false,
+        commentstyle=\color{gray},
+        keywordstyle=\color{blue},
+        frame=tb,
+        captionpos=b}
 \usepackage{minted}
+\usemintedstyle{friendly} % или другой стиль по вашему выбору
+
+
 \usemintedstyle{emacs}
 \usepackage{xcolor} % to access the named colour LightGray
 \definecolor{LightGray}{gray}{0.9}
@@ -100,7 +114,7 @@
         Как отмечается в книге Matheus Facure Alves \href{https://matheusfacure.github.io/python-causality-handbook/landing-page.html}{"Causal Inference for The Brave and True"}{},
         \begin{quote}
             "в основе этих вопросов лежит причинно-следственная связь \ldots и к сожалению для машинного обучения, мы не можем полагаться на прогнозы корреляционного типа, чтобы с ними справиться"
-        \end{quote}.
+        \end{quote}
         В качестве наглядной иллюстрации такой истории из "Prediction Machines":
         \begin{quote}
             "Во многих отраслях низкая цена ассоциируется с низкими продажами.
@@ -175,53 +189,100 @@
 
         Поскольку множество $\mathcal{M}$ (matter objects), по которому мы усредняем, не всегда совпадает с множеством $\mathcal{U}$ всех изучаемых объектов, будем уточнять множество усреднения с помощью нижнего индекса, когда это необходимо.
         Кроме того, существуют некоторые прижившиеся понятия и обозначения.
-        Для удобства соберем все в список:
+        Для удобства приведем список обозначений:
+
+        % \begin{itemize}
+        %     \item $\mathcal{U}$ --- множество всех объектов нашего исследования.
+
+        %     \item $T$ --- бинарная переменная --- индикатор принадлежности объекта к целевой группе.
+
+        %     \item \( Y \) --- целевая метрика.
+
+        %     \item \( Y^i_{factual} \) --- Фактическое, наблюдаемое значение исхода $Y$ для объекта $i$.
+
+        %     \item \( Y^i_{factual} \) --- контрФактическое, альтернативное значение исхода $Y$ для объекта $i$.
+
+        %     \item \( Y^i_{(0)} \) и \( Y^i_{(1)} \) --- Потенциальные исходы для объекта $i$, если бы он был в состоянии $(0)$ или $(1)$ соответственно.
+
+        %     \item $\mathcal{A}$ --- контрольная группа, в ней $T = 0$.
+
+        %     \item $\mathcal{B}$ --- целевая группа, в ней $T = 1$.
+
+        %     \item $Y^i_{(0)}$ --- отклик объекта $i$, если бы он находился в тестовой группе.
+
+        %     \item $Y^i_{(1)}$ --- отклик объекта $i$, если бы он находился в целевой группе.
+
+        %     \item $ATE = ATE_\mathcal{U}$ --- средний эффект от воздействия
+
+        %     \item $ATC = ATE_\mathcal{A}$ --- средний эффект от воздействия на контрольную группу
+
+        %     \item $ATT = ATE_\mathcal{B}$ --- средний эффект от воздействия на целевую группу
+
+        % \end{itemize}
 
         \begin{itemize}
-            \item $\mathcal{U}$ -- множество всех объектов нашего исследования.
-
-            \item $T$ -- бинарная переменная -- индикатор принадлежности объекта к целевой группе.
-
-            \item \( Y \) -- целевая метрика.
-
-            \item $\mathcal{A}$ -- контрольная группа, в ней $T = 0$.
-
-            \item $\mathcal{B}$ -- целевая группа, в ней $T = 1$.
-
-            \item $Y^i_{(0)}$ -- отклик объекта $i$, если бы он находился в тестовой группе.
-
-            \item $Y^i_{(1)}$ -- отклик объекта $i$, если бы он находился в целевой группе.
-
-            \item $ATE = ATE_\mathcal{U}$ -- средний эффект от воздействия
-
-            \item $ATC = ATE_\mathcal{A}$ -- средний эффект от воздействия на контрольную группу
-
-            \item $ATT = ATE_\mathcal{B}$ -- средний эффект от воздействия на целевую группу
-
+            \item $\mathcal{U}$ — множество всех объектов исследования.
+            \item $T$ — бинарная переменная, индикатор принадлежности объекта к целевой группе ($T=1$) или контрольной группе ($T=0$).
+            \item $Y$ — целевая метрика (исход).
+            \item $Y^i_{\text{factual}}$ — фактическое, наблюдаемое значение исхода $Y$ для объекта $i$.
+            \item $Y^i_{\text{counterfactual}}$ — контрфактическое значение исхода $Y$ для объекта $i$.
+            % \item $Y^i_{(0)}$ и $Y^i_{(1)}$ — потенциальные исходы для объекта $i$, если бы он находился в состоянии $(0)$ или $(1)$ соответственно.
+            \item $\mathcal{A}$ — контрольная группа, для которой $T = 0$.
+            \item $\mathcal{B}$ — целевая группа, для которой $T = 1$.
+            \item $Y^i_{(0)}$ — потенциальный исход объекта $i$ в случае \textbf{не} подвергания воздействию.
+            \item $Y^i_{(1)}$ — потенциальный исход объекта $i$ в случае подвергания воздействию.
+            \item $ATE = ATE_\mathcal{U}$ — средний причинный эффект (Average Treatment Effect) для всего множества объектов.
+            \item $ATC = ATE_\mathcal{A}$ — средний причинный эффект на контрольную группу.
+            \item $ATT = ATE_\mathcal{B}$ — средний причинный эффект на целевую группу.
         \end{itemize}
 
-    \section*{Если мы знаем contrfactual}
+    \section*{Если мы знаем counterfactual}
 
         Рассмотрим синтетический пример.
 
-        *** пример в табличном виде с примером импорта ***
+        \begin{minted}[linenos, breaklines, fontsize=\footnotesize]{python}
+            import pandas as pd
+            import hypex
+            from hypex.utils import datasets
 
 
+            df = datasets.gen_oracle_df(
+                factual_only=False,
+                random_state=145
+            ).loc[:, ['Treatment', 'Target_untreated', 'Target_treated']]
+            df
+        \end{minted}
+
+
+        \input{table1}
+
+
+        \begin{minted}[linenos, breaklines, fontsize=\footnotesize]{python}
+            Y_0 = df['Target_untreated']
+            Y_1 = df['Target_treated']
+
+            Y_factual = Y_0 * (1 - df['Treatment']) + Y_1 * df['Treatment']
+            Y_counterfactual = Y_0 * df['Treatment'] + Y_1 * (1 - df['Treatment'])
+
+            TE = Y_1 - Y_0
+
+            TE[df['Treatment'] == 0].mean(), TE[df['Treatment'] == 1].mean(), TE.mean()
+        \end{minted}
 
         Как мы можем здесь увидеть,
 
-        \[ATE_{\mathcal{A}} = -50\]
+        \[ATE_{\mathcal{A}} = 75\]
 
-        \[ATE_{\mathcal{B}} = -50\]
+        \[ATE_{\mathcal{B}} = 125\]
 
-        \[ATE_{\mathcal{A} \cup \mathcal{B}} = -50\]
+        \[ATE_{\mathcal{A} \cup \mathcal{B}} = 100\]
 
-        Нам повезло: имея доступ к contrfactual значениям, мы легко и точно определили $ATE$.
+        Нам повезло: имея доступ к counterfactual значениям, мы легко и точно определили $ATE$.
         Однако в реальности мы не можем измерить величины из параллельных вселенных.
         Поэтому были разработаны методы аппроксимации $ATE$ на основе доступных данных.
         Рассмотрим самый наивный из этих методов.
 
-    \section*{Simple mean difference method}
+    \section*{Simple mean difference}
 
         Рассмотрим классический пример, иллюстрирующий, что иногда очевидные выводы оказываются ошибочными.
         Возьмём два госпиталя: один действовал уже много лет, когда был построен второй.
@@ -229,48 +290,73 @@
         Однако в процессе времени выяснилось, что средний уровень смертности во втором госпитале значительно превысил показатели первого.
 
 
-        ** пример данных и вычислений ATE наивным методом **
+        \begin{minted}[linenos, breaklines, fontsize=\footnotesize]{python}
+            df = datasets.gen_special_medicine_df(
+                data_size=1000,
+                dependent_division=True,
+                random_state=None,
+            )
 
+            df.head(8)
+        \end{minted}
+
+        \input{table3}
+
+        \begin{minted}[linenos, breaklines, fontsize=\footnotesize]{python}
+            (
+                df.loc[df['experimental_treatment']==1, 'residual_lifetime'].mean() -
+                df.loc[df['experimental_treatment']==0, 'residual_lifetime'].mean()
+            )
+        \end{minted}
+
+        Output: -1.67
 
         Мы получили совершенно контринтуитивный результат, даже по знаку противоположный естественным ожиданиям.
         Причиной этого стало то, что новый медицинский центр привлекал преимущественно пациентов с более тяжёлыми формами заболевания.
-
-        ** формула разложения simple diff est эффекта на ATE и BIAS **
 
         Это статистическое смещение (bias) в распределении пациентов искажало общую картину.
         Из-за чего нельзя было делать выводы на основании прямого сравнения смертностей в медицинских центрах.
 
         Давайте попробуем устранить эти различия в распределениях, сделав данные однородными по тяжести заболеваний, и повторим наш эксперимент.
 
-        *** повторяем эксперимент ***
+
+        \begin{minted}[linenos, breaklines, fontsize=\footnotesize]{python}
+            df = datasets.gen_special_medicine_df(
+                data_size=1000,
+                dependent_division=False,
+                random_state=None,
+            )
+
+            df.head(8)
+        \end{minted}
+
+        \input{table4}
+
+        \begin{minted}[linenos, breaklines, fontsize=\footnotesize]{python}
+            (
+                df.loc[df['experimental_treatment']==1, 'residual_lifetime'].mean() -
+                df.loc[df['experimental_treatment']==0, 'residual_lifetime'].mean()
+            )
+        \end{minted}
+
+        Output: 1.95
 
         Видим, что значение $ATE$ стало более правдоподобным.
 
         Попробуем разобраться.
         Распишем для произвольного множества $\mathcal{M}$ значение, полученное при помощи simple difference method ($SD_\mathcal{M}$).
         Для краткости обозначим за $\mathcal{M}_{(0)}$ и $\mathcal{M}_{(1)}$ подмножества множества $\mathcal{M}$, обусловленные значениями $T$.
-
-        \[
-            SD_\mathcal{M} =
-            \frac{1}{|\mathcal{M}_{(1)}|} \displaystyle\sum_{i\in\mathcal{M}_{(1)}}
-            Y^i_{factual} -
-            \frac{1}{|\mathcal{M}_{(0)}|} \displaystyle\sum_{i\in\mathcal{M}_{(0)}}
-            Y^i_{factual} =
-            \\
-            \frac{1}{|\mathcal{M}_{(1)}|} \displaystyle\sum_{i\in\mathcal{M}_{(1)}}
-            Y^i_{(1)} -
-            \frac{1}{|\mathcal{M}_{(0)}|} \displaystyle\sum_{i\in\mathcal{M}_{(0)}}
-            Y^i_{(0)} =
-            \frac{1}{|\mathcal{M}_{(1)}|} \displaystyle\sum_{i\in\mathcal{M}_{(1)}}
-            \big( Y^i_{(1)} - Y^i_{(0)} \big) +
-            \Big(
-            \frac{1}{|\mathcal{M}_{(1)}|} \displaystyle\sum_{i\in\mathcal{M}_{(1)}}
-            Y^i_{(0)} -
-            \frac{1}{|\mathcal{M}_{(0)}|} \displaystyle\sum_{i\in\mathcal{M}_{(0)}}
-            Y^i_{(0)}
-            ) =
-            ATE_{\mathcal{M}_{(1)}} + BIAS(\mathcal{M}, 0)
-        \]
+        \begin{align*}
+            SD_\mathcal{M} &=
+            \frac{1}{|\mathcal{M}_{(1)}|} \sum_{i \in \mathcal{M}_{(1)}} Y^i_{\text{factual}} -
+            \frac{1}{|\mathcal{M}_{(0)}|} \sum_{i \in \mathcal{M}_{(0)}} Y^i_{\text{factual}} \\
+            &= \frac{1}{|\mathcal{M}_{(1)}|} \sum_{i \in \mathcal{M}_{(1)}} Y^i_{(1)} -
+            \frac{1}{|\mathcal{M}_{(0)}|} \sum_{i \in \mathcal{M}_{(0)}} Y^i_{(0)} \\
+            &= \frac{1}{|\mathcal{M}_{(1)}|} \sum_{i \in \mathcal{M}_{(1)}} \big( Y^i_{(1)} - Y^i_{(0)} \big) +
+            \left( \frac{1}{|\mathcal{M}_{(1)}|} \sum_{i \in \mathcal{M}_{(1)}} Y^i_{(0)} -
+            \frac{1}{|\mathcal{M}_{(0)}|} \sum_{i \in \mathcal{M}_{(0)}} Y^i_{(0)} \right) \\
+            &= ATE_{\mathcal{M}_{(1)}} + BIAS(\mathcal{M}, 0)
+        \end{align*}
 
         Следовательно,
         \[
