@@ -1,0 +1,100 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{hyperref} % For hyperlinks
+
+\usepackage{fvextra} % Enhanced verbatim environments
+\usepackage{csquotes} % Context sensitive quotation facilities
+
+\usepackage{listings} % Typeset source code listings
+\lstset{
+    basicstyle=\ttfamily,
+    breaklines=true,
+    showstringspaces=false,
+    commentstyle=\color{gray},
+    keywordstyle=\color{blue},
+    frame=tb,
+    captionpos=b
+}
+
+\usepackage{minted} % Syntax highlighting for source code
+\usemintedstyle{friendly} % Set minted style
+
+\usepackage{xcolor} % To access named colours
+\definecolor{LightGray}{gray}{0.9} % Define a custom color
+
+\usepackage{geometry} % Simple package for setting the page layout
+\geometry{
+    top=20mm,
+    bottom=25mm,
+    left=30mm,
+    right=10mm
+}
+
+\usepackage{setspace} % Set line spacing
+\setstretch{1.1}
+
+\usepackage{amsmath,amssymb} % Mathematical symbols and environments
+\DeclareMathOperator{\E}{\mathbb{E}} % Define math operator for expectation
+
+% Document information
+\newcommand{\coursename}{Causal Inference: прозрение и практика}
+\title{
+    \textbf{\coursename}\\
+    Лекция 2. Рандомизированные контролируемые испытания
+}
+\author{Юрашку Иван Вячеславович}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Введение}
+
+    Рандомизированные контролируемые испытания (РКИ) являются золотым стандартом для оценки эффектов вмешательств и определения причинно-следственных связей.
+    Они помогают минимизировать предвзятость и обеспечивают объективное сравнение между группами.
+
+\section{Постановка задачи РКИ}
+
+    Целью РКИ является случайное распределение участников между группами treatment и control, что гарантирует равномерность всех потенциальных факторов, влияющих на исход.
+
+\section{Сценарии проведения РКИ: AB тесты}
+
+    AB тесты являются одним из наиболее распространенных сценариев РКИ. Они используются для оценки эффективности изменений на сайте или в продукте.
+
+\subsection{Описание AB теста}
+
+    AB тест состоит из двух групп: treatment (новая версия продукта) и control (текущая версия продукта). Участники случайным образом назначаются в одну из этих групп.
+
+\subsection{Формулы}
+
+    Формула для оценки среднего эффекта вмешательства (ATE):
+
+    \[
+    \text{ATE} = \E[Y(1) - Y(0)]
+    \]
+
+    Формула для BIAS(M0, M1, t):
+
+    \[
+    \text{BIAS}(M0, M1, t) = \E[M1(t) - M0]
+    \]
+
+\section{Примеры РКИ}
+
+\subsection{Медицинское исследование}
+
+Пример медицинского исследования с применением РКИ.
+
+\subsection{AB тест в интернет-маркетинге}
+
+Пример использования AB теста для оценки конверсий на сайте.
+
+\section{Заключение}
+
+РКИ играют ключевую роль в науке и практике, обеспечивая объективное оценивание эффектов вмешательств.
+
+\end{document}
