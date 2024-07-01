@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage{graphicx} % Для вставки изображений
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc} % Кодировка UTF-8
+\usepackage[russian,english]{babel} % Языковые настройки для русского и английского
+\sloppy % Избегаем выхода за границы страницы
+
+\usepackage{hyperref} % Для создания гиперссылок
+
+\usepackage{fvextra} % Расширенные окружения для вербатима
+\usepackage{csquotes} % Контекстно-чувствительные цитаты
+
+\usepackage{listings} % Настройка отображения исходного кода
+\lstset{
+    basicstyle=\ttfamily,
+    breaklines=true,
+    showstringspaces=false,
+    commentstyle=\color{gray},
+    keywordstyle=\color{blue},
+    frame=tb,
+    captionpos=b
+}
+
+\usepackage{minted} % Подсветка синтаксиса для исходного кода
+\usemintedstyle{friendly} % Стиль подсветки по умолчанию (можно выбрать другой)
+
+\usepackage{xcolor} % Для доступа к именованным цветам
+\definecolor{LightGray}{gray}{0.9} % Определение пользовательского цвета
+
+\usepackage{geometry} % Простая настройка полей страницы
+\geometry{
+    top=20mm,
+    bottom=25mm,
+    left=30mm,
+    right=10mm
+}
+
+\usepackage{setspace} % Настройка межстрочного интервала
+\setstretch{1.1}
+
+\usepackage{amsmath,amssymb} % Математические символы и окружения
+\DeclareMathOperator{\E}{\mathbb{E}} % Определение оператора математического ожидания
