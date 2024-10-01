@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0f626463-c08e-44ce-a901-39b37c010c6f" name="Changes" comment="space reorganization&#10;new lecture object">
+      <change afterPath="$PROJECT_DIR$/.idea/Causal_Inference_lectures.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1/_Inference_lectures_main.pyg/_minted-1_main/emacs.pygstyle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1/_minted-1_main/885E0A290DF1AD33F0F3B4D0573D315D7E92B4308C5C7357C5818634586401AB.pygtex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1/_minted-1_main/8E71721091EDF4C2974BDE924C2B20607E92B4308C5C7357C5818634586401AB.pygtex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1/_minted-1_main/94B2B4C45F2F3E97A25313793143F5527E92B4308C5C7357C5818634586401AB.pygtex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1/_minted-1_main/AB468C30503C840C2EE8D71871465B517E92B4308C5C7357C5818634586401AB.pygtex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1/_minted-1_main/B86D90FEE6D30EA6541C484D05B4B6A87E92B4308C5C7357C5818634586401AB.pygtex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1/_minted-1_main/friendly.pygstyle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1/additional/table.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1/additional/table1.aux" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1/out/1_main.synctex.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2/_minted-2_main/5CB02B6D2E04E261B32906632F4BEF35DF2B88FB556D4C64F9F115458F15FB8B.pygtex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2/_minted-2_main/6F6F641652EDCD1B4EF22C6AAECDEBB9DF2B88FB556D4C64F9F115458F15FB8B.pygtex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2/_minted-2_main/7188F2AD3054A2A2955D491C81346D7DDF2B88FB556D4C64F9F115458F15FB8B.pygtex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2/_minted-2_main/C0B91CA0C6A840E455B9B153EA0BEDB9DF2B88FB556D4C64F9F115458F15FB8B.pygtex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2/_minted-2_main/friendly.pygstyle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2/out/2_main.synctex.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3/3_main.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3/additional/header.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3/out/3_main.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3/Рандомизированные контролируемые испытания.ipynb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/1/1_main.tex" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2eUsNNQtUUDKhZ2mDTyi5ZDbRc7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Ivan/PycharmProjects/Causal_Inference_lectures",
+    "settings.editor.selected.configurable": "proofread"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ivan\PycharmProjects\Causal_Inference_lectures" />
+      <recent name="C:\Users\Ivan\PycharmProjects\Causal_Inference_lectures\2" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ivan\PycharmProjects\Causal_Inference_lectures\2\additional" />
+      <recent name="C:\Users\Ivan\PycharmProjects\Causal_Inference_lectures\1\additional" />
+      <recent name="C:\Users\Ivan\PycharmProjects\Causal_Inference_lectures\1" />
+      <recent name="C:\Users\Ivan\PycharmProjects\Causal_Inference_lectures\2" />
+      <recent name="C:\Users\Ivan\PycharmProjects\Causal_Inference_lectures\using_styles" />
+    </key>
+  </component>
+  <component name="RunManager" selected="LaTeX.1. Основные понятия Causal Inference">
+    <configuration default="true" type="BIBTEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify-bibtex>
+        <compiler />
+        <compiler-path />
+        <compiler-arguments />
+        <envs />
+        <main-file>$APPLICATION_HOME_DIR$/jbr/bin</main-file>
+        <aux-dir>$APPLICATION_HOME_DIR$/jbr/bin</aux-dir>
+      </texify-bibtex>
+      <method v="2" />
+    </configuration>
+    <configuration name="1. Основные понятия Causal Inference" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="ci lectures">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--enable-write18</compiler-arguments>
+        <envs />
+        <main-file>$PROJECT_DIR$/1/1_main.tex</main-file>
+        <output-path>$PROJECT_DIR$/1/out</output-path>
+        <auxil-path>$PROJECT_DIR$/1/aux</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="2. Рандомизированные контролируемые испытания" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="ci lectures">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--enable-write18</compiler-arguments>
+        <envs />
+        <main-file>$PROJECT_DIR$/2/2_main.tex</main-file>
+        <output-path>$PROJECT_DIR$/2/out</output-path>
+        <auxil-path>$PROJECT_DIR$/2/aux</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="3." type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" folderName="ci lectures">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments>--enable-write18</compiler-arguments>
+        <envs />
+        <main-file>$PROJECT_DIR$/3/3_main.tex</main-file>
+        <output-path>$PROJECT_DIR$/3/out</output-path>
+        <auxil-path>$PROJECT_DIR$/3/aux</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>SUMATRA</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file />
+        <output-path>{projectDir}/out</output-path>
+        <auxil-path>{projectDir}/auxil</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>MIKTEX</latex-distribution>
+        <has-been-run>false</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="convert" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Causal_Inference_lectures" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/convert.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Causal_Inference_lectures" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="LaTeX.1. Основные понятия Causal Inference" />
+      <item itemvalue="LaTeX.2. Рандомизированные контролируемые испытания" />
+      <item itemvalue="LaTeX.3." />
+      <item itemvalue="Python.convert" />
+      <item itemvalue="Python.main" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.convert" />
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0f626463-c08e-44ce-a901-39b37c010c6f" name="Changes" comment="" />
+      <created>1711970449567</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711970449567</updated>
+      <workItem from="1711970450740" duration="1349000" />
+      <workItem from="1711973523510" duration="2215000" />
+      <workItem from="1711975975039" duration="1409000" />
+      <workItem from="1711977422306" duration="401000" />
+      <workItem from="1711977859793" duration="46000" />
+      <workItem from="1711978116285" duration="894000" />
+      <workItem from="1711979030303" duration="1517000" />
+      <workItem from="1712130967605" duration="7555000" />
+      <workItem from="1712568283140" duration="7040000" />
+      <workItem from="1712578528253" duration="2791000" />
+      <workItem from="1712581478320" duration="1469000" />
+      <workItem from="1712582976380" duration="297000" />
+      <workItem from="1712584312808" duration="2148000" />
+      <workItem from="1712738921411" duration="1569000" />
+      <workItem from="1713189633875" duration="2743000" />
+      <workItem from="1716986014084" duration="1439000" />
+      <workItem from="1717954935713" duration="3651000" />
+      <workItem from="1718813628928" duration="5072000" />
+      <workItem from="1719326934546" duration="14161000" />
+      <workItem from="1719813475685" duration="21491000" />
+      <workItem from="1724993416828" duration="839000" />
+      <workItem from="1727685760870" duration="6048000" />
+    </task>
+    <task id="LOCAL-00001" summary="added 1st paper">
+      <created>1711977061955</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711977061955</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added 1st paper">
+      <created>1711977087531</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711977087531</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added 1st paper">
+      <created>1711977610111</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711977610111</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added python pack">
+      <created>1712146769107</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712146769107</updated>
+    </task>
+    <task id="LOCAL-00005" summary="changed 1 lec">
+      <created>1712146825922</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712146825922</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added minted">
+      <created>1712593281755</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712593281755</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added text">
+      <created>1712768736515</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712768736515</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added text">
+      <created>1713208231000</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1713208231000</updated>
+    </task>
+    <task id="LOCAL-00009" summary="reprocessed">
+      <created>1716994992415</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1716994992415</updated>
+    </task>
+    <task id="LOCAL-00010" summary="input code and data examples">
+      <created>1719405901793</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1719405901793</updated>
+    </task>
+    <task id="LOCAL-00011" summary="creates 2nd article main.tex">
+      <created>1719416203200</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1719416203200</updated>
+    </task>
+    <task id="LOCAL-00012" summary="beauty fixes for 1st article">
+      <created>1719815506383</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1719815506383</updated>
+    </task>
+    <task id="LOCAL-00013" summary="1st article lil fixes">
+      <created>1719823103626</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1719823103626</updated>
+    </task>
+    <task id="LOCAL-00014" summary="made headers&#10;changed 2nd article text">
+      <created>1719832367094</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1719832367094</updated>
+    </task>
+    <task id="LOCAL-00015" summary="2nd article is done">
+      <created>1719846854154</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1719846854154</updated>
+    </task>
+    <task id="LOCAL-00016" summary="space reorganization&#10;new lecture object">
+      <created>1727771735553</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1727771735553</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="TerminalProjectNonSharedOptionsProvider">
+    <envs>
+      <env key="Path" value="C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\MiKTeX\miktex\bin\x64\;C:\Users\Ivan\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\PyCharm 2022.1.3\bin;;C:\Program Files\JetBrains\PyCharm Community Edition 2022.1.3\bin;;C:\ProgramData\anaconda3\envs\HypEx_env_p9\Scripts\;" />
+    </envs>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="e6540d45-a841-4a89-af20-df305acfa2bb">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Users/Ivan/PycharmProjects/Causal_Inference_lectures/1" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="e6540d45-a841-4a89-af20-df305acfa2bb" value="TOOL_WINDOW" />
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added 1st paper" />
+    <MESSAGE value="added python pack" />
+    <MESSAGE value="changed 1 lec" />
+    <MESSAGE value="added minted" />
+    <MESSAGE value="added text" />
+    <MESSAGE value="reprocessed" />
+    <MESSAGE value="input code and data examples" />
+    <MESSAGE value="creates 2nd article main.tex" />
+    <MESSAGE value="beauty fixes for 1st article" />
+    <MESSAGE value="1st article lil fixes" />
+    <MESSAGE value="made headers&#10;changed 2nd article text" />
+    <MESSAGE value="2nd article is done" />
+    <MESSAGE value="space reorganization&#10;new lecture object" />
+    <option name="LAST_COMMIT_MESSAGE" value="space reorganization&#10;new lecture object" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Causal_Inference_lectures$convert.coverage" NAME="convert Coverage Results" MODIFIED="1711974046278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
