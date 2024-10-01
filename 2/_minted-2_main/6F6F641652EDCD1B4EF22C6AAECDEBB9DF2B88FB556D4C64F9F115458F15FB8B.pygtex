@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+        \PYG{c+c1}{\PYGZsh{} Установка случайного зерна для воспроизводимости}
+        \PYG{n}{np}\PYG{o}{.}\PYG{n}{random}\PYG{o}{.}\PYG{n}{seed}\PYG{p}{(}\PYG{l+m+mi}{42}\PYG{p}{)}
+
+        \PYG{c+c1}{\PYGZsh{} Размер выборок}
+        \PYG{n}{n\PYGZus{}A} \PYG{o}{=} \PYG{l+m+mi}{1000}
+        \PYG{n}{n\PYGZus{}B} \PYG{o}{=} \PYG{l+m+mi}{1000}
+
+        \PYG{c+c1}{\PYGZsh{} Генерация данных}
+        \PYG{n}{data\PYGZus{}A} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{random}\PYG{o}{.}\PYG{n}{normal}\PYG{p}{(}\PYG{n}{loc}\PYG{o}{=}\PYG{l+m+mi}{50}\PYG{p}{,} \PYG{n}{scale}\PYG{o}{=}\PYG{l+m+mi}{10}\PYG{p}{,} \PYG{n}{size}\PYG{o}{=}\PYG{n}{n\PYGZus{}A}\PYG{p}{)}
+        \PYG{n}{data\PYGZus{}B} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{random}\PYG{o}{.}\PYG{n}{normal}\PYG{p}{(}\PYG{n}{loc}\PYG{o}{=}\PYG{l+m+mi}{55}\PYG{p}{,} \PYG{n}{scale}\PYG{o}{=}\PYG{l+m+mi}{10}\PYG{p}{,} \PYG{n}{size}\PYG{o}{=}\PYG{n}{n\PYGZus{}B}\PYG{p}{)}
+
+        \PYG{c+c1}{\PYGZsh{} Создание DataFrame}
+        \PYG{n}{df} \PYG{o}{=} \PYG{n}{pd}\PYG{o}{.}\PYG{n}{DataFrame}\PYG{p}{(\PYGZob{}}
+            \PYG{l+s+s1}{\PYGZsq{}group\PYGZsq{}}\PYG{p}{:} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}A\PYGZsq{}}\PYG{p}{]} \PYG{o}{*} \PYG{n}{n\PYGZus{}A} \PYG{o}{+} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}B\PYGZsq{}}\PYG{p}{]} \PYG{o}{*} \PYG{n}{n\PYGZus{}B}\PYG{p}{,}
+            \PYG{l+s+s1}{\PYGZsq{}value\PYGZsq{}}\PYG{p}{:} \PYG{n}{np}\PYG{o}{.}\PYG{n}{concatenate}\PYG{p}{([}\PYG{n}{data\PYGZus{}A}\PYG{p}{,} \PYG{n}{data\PYGZus{}B}\PYG{p}{])}
+        \PYG{p}{\PYGZcb{})}
+\end{Verbatim}

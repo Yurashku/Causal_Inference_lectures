@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+        \PYG{err}{!}\PYG{n}{pip} \PYG{n}{install} \PYG{n}{hypex}
+        \PYG{k+kn}{import} \PYG{n+nn}{numpy} \PYG{k}{as} \PYG{n+nn}{np}
+        \PYG{k+kn}{import} \PYG{n+nn}{pandas} \PYG{k}{as} \PYG{n+nn}{pd}
+        \PYG{k+kn}{import} \PYG{n+nn}{hypex} \PYG{k}{as} \PYG{n+nn}{hx}
+\end{Verbatim}

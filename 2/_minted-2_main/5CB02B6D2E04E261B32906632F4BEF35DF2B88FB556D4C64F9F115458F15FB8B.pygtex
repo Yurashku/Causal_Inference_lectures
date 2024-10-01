@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+        \PYG{c+c1}{\PYGZsh{} Инициализация эксперимента}
+        \PYG{n}{experiment} \PYG{o}{=} \PYG{n}{hx}\PYG{o}{.}\PYG{n}{Experiment}\PYG{p}{(}\PYG{n}{data}\PYG{o}{=}\PYG{n}{df}\PYG{p}{,} \PYG{n}{test\PYGZus{}group}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}B\PYGZsq{}}\PYG{p}{,} \PYG{n}{control\PYGZus{}group}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}A\PYGZsq{}}\PYG{p}{,} \PYG{n}{metric}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}value\PYGZsq{}}\PYG{p}{)}
+
+        \PYG{c+c1}{\PYGZsh{} Проведение теста}
+        \PYG{n}{results} \PYG{o}{=} \PYG{n}{experiment}\PYG{o}{.}\PYG{n}{run}\PYG{p}{()}
+
+        \PYG{c+c1}{\PYGZsh{} Вывод результатов}
+        \PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{results}\PYG{p}{)}
+\end{Verbatim}

@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+        \PYG{c+c1}{\PYGZsh{} Пример вывода результатов}
+        \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}P\PYGZhy{}value: }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{results}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}p\PYGZhy{}value\PYGZsq{}}\PYG{p}{]}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+        \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}Mean difference: }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{results}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}mean\PYGZus{}difference\PYGZsq{}}\PYG{p}{]}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+        \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}Confidence interval: }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{results}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}confidence\PYGZus{}interval\PYGZsq{}}\PYG{p}{]}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\end{Verbatim}
