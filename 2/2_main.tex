@@ -264,13 +264,21 @@
 
         \begin{minted}[bgcolor=LightGray]{python}
         # Инициализация эксперимента
+        ab = hx.ABTest()
+        ed = Dataset(
+                     roles={
+                         "group": TreatmentRole(),
+                         "value": TargetRole(),
+                     }, 
+                     data=df,
+        )
         experiment = hx.Experiment(data=df, test_group='B', control_group='A', metric='value')
 
         # Проведение теста
-        results = experiment.run()
+        results = ab.execute(ed)
 
         # Вывод результатов
-        print(results)
+        print(results.resume)
         \end{minted}
 
         \subsection{Шаг 4: Интерпретация результатов}
